@@ -1,2 +1,2 @@
 # FrontEndMentor-challenges
-Projects for [Fontend Mentor](https://www.frontendmentor.io/challenges).
+Projects available at [Fontend Mentor](https://www.frontendmentor.io/challenges).
