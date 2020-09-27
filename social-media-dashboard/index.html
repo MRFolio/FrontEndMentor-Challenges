@@ -14,11 +14,84 @@
     <title>Frontend Mentor | [Social Media Dashboard]</title>
   </head>
   <body>
-    Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987
-    Followers 12 Today @nathanf 1044 Followers 99 Today @realnathanf 11k
-    Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview - Today
-    Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
-    Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
+    <header class="header">
+      <h1 class="header-title">Social Media Dashboard</h1>
+      <h3 class="followers">Total Followers: 23,004</h3>
+      <div class="dark-mode-container">
+        <label for="dark-theme">Dark Mode</label>
+        <input type="checkbox" name="dark-theme" id="dark-btn" />
+        <span class="slider"></span>
+      </div>
+    </header>
+    <main>
+      <section class="main-container">
+        <div class="item">
+          <div class="first-row">
+            <img
+              class="icon social"
+              src="./images/icon-facebook.svg"
+              alt="FB icon"
+            />
+            <span class="username">@nathanf</span>
+            <span class="number">1987</span>
+            <span class="followers">followers</span>
+            <img class="icon-up" src="./images/icon-up.svg" alt="up icon" />
+            <span class="today">12 Today</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="first-row">
+            <img
+              class="icon social"
+              src="./images/icon-facebook.svg"
+              alt="FB icon"
+            />
+            <span class="username">@nathanf</span>
+            <span class="number">1044</span>
+            <span class="followers">followers</span>
+            <img class="icon-up" src="./images/icon-up.svg" alt="up icon" />
+            <span class="today">99 Today</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="first-row">
+            <img
+              class="icon social"
+              src="./images/icon-instagram.svg"
+              alt="Instagram icon"
+            />
+            <span class="username">@realnathanf</span>
+            <span class="number">11k</span>
+            <span class="followers">followers</span>
+            <img class="icon-up" src="./images/icon-up.svg" alt="up icon" />
+            <span class="today">1099 Today</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="first-row">
+            <img
+              class="icon social"
+              src="./images/icon-youtube.svg"
+              alt="Youtube icon"
+            />
+            <span class="username">@nathanf</span>
+            <span class="number">8239</span>
+            <span class="followers">followers</span>
+            <img
+              class="icon-down"
+              src="./images/icon-down.svg"
+              alt="down icon"
+            />
+            <span class="today">144 Today</span>
+          </div>
+        </div>
+      </section>
+      @nathanf 1987 Followers 12 Today @nathanf 1044 Followers 99 Today
+      @realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144 Today
+      Overview - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile
+      Views 52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total Views
+      1407 12%
+    </main>
 
     <div class="attribution">
       Challenge by
