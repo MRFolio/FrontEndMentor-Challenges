@@ -10,16 +10,22 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | [Social Media Dashboard]</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="header-title">Social Media Dashboard</h1>
-      <h3 class="followers">Total Followers: 23,004</h3>
-      <div class="dark-mode-container">
-        <label for="dark-theme">Dark Mode</label>
-        <input type="checkbox" name="dark-theme" id="dark-btn" />
+      <div class="header-left">
+        <h1 class="header-title">Social Media Dashboard</h1>
+        <p class="followers">Total Followers: 23,004</p>
+      </div>
+      <div class="header-right">
+        <label for="checkbox">Dark Mode</label>
+        <input type="checkbox" name="checkbox" id="checkbox" />
         <span class="slider"></span>
       </div>
     </header>
@@ -28,13 +34,13 @@
         <div class="item">
           <div class="first-row">
             <img
-              class="icon social"
+              class="icon-fb"
               src="./images/icon-facebook.svg"
               alt="FB icon"
             />
             <span class="username">@nathanf</span>
-            <span class="number">1987</span>
-            <span class="followers">followers</span>
+            <h3 class="number">1987</h3>
+            <p class="followers">followers</p>
             <img class="icon-up" src="./images/icon-up.svg" alt="up icon" />
             <span class="today">12 Today</span>
           </div>
@@ -42,13 +48,13 @@
         <div class="item">
           <div class="first-row">
             <img
-              class="icon social"
-              src="./images/icon-facebook.svg"
+              class="icon-twitter"
+              src="./images/icon-twitter.svg"
               alt="FB icon"
             />
             <span class="username">@nathanf</span>
-            <span class="number">1044</span>
-            <span class="followers">followers</span>
+            <h3 class="number">1044</h3>
+            <p class="followers">followers</p>
             <img class="icon-up" src="./images/icon-up.svg" alt="up icon" />
             <span class="today">99 Today</span>
           </div>
@@ -56,13 +62,13 @@
         <div class="item">
           <div class="first-row">
             <img
-              class="icon social"
+              class="icon-ig"
               src="./images/icon-instagram.svg"
               alt="Instagram icon"
             />
             <span class="username">@realnathanf</span>
-            <span class="number">11k</span>
-            <span class="followers">followers</span>
+            <h3 class="number">11k</h3>
+            <p class="followers">followers</p>
             <img class="icon-up" src="./images/icon-up.svg" alt="up icon" />
             <span class="today">1099 Today</span>
           </div>
@@ -70,13 +76,13 @@
         <div class="item">
           <div class="first-row">
             <img
-              class="icon social"
+              class="icon-yt"
               src="./images/icon-youtube.svg"
               alt="Youtube icon"
             />
             <span class="username">@nathanf</span>
-            <span class="number">8239</span>
-            <span class="followers">followers</span>
+            <h3 class="number">8239</h3>
+            <p class="followers">followers</p>
             <img
               class="icon-down"
               src="./images/icon-down.svg"

@@ -1,0 +1,18 @@
+@use "helpers/variables" as v;
+
+.icon-fb {
+  color: v.$Facebook;
+}
+
+.icon-twitter {
+  color: red;
+  /* background-color: red; */
+}
+
+.icon-ig {
+  color: v.$Instagram;
+}
+
+.icon-yt {
+  color: v.$YouTube;
+}

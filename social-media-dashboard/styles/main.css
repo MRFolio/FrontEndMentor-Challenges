@@ -4,8 +4,28 @@
   box-sizing: border-box;
 }
 
+.icon-fb {
+  color: #198ff5;
+}
+
+.icon-twitter {
+  color: red;
+  /* background-color: red; */
+}
+
+.icon-ig {
+  color: linear-gradient(90deg, #fdc468, #df4996);
+}
+
+.icon-yt {
+  color: #c4032a;
+}
+
 body {
-  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  background-color: white;
+  color: #63687e;
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
