@@ -1,6 +1,10 @@
-@use 'helpers/variables';
+@use 'helpers/variables' as v;
 @use 'helpers/resets';
+@use 'components';
 
 body {
-  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  background-color: v.$White;
+  color: v.$Dark-Grayish-Blue;
+  font-size: 1.8rem;
 }
