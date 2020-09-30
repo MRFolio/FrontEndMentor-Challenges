@@ -5,12 +5,11 @@
 }
 
 .icon-fb {
-  color: #198ff5;
+  fill: red;
 }
 
 .icon-twitter {
   color: red;
-  /* background-color: red; */
 }
 
 .icon-ig {
@@ -23,9 +22,89 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: white;
-  color: #63687e;
+  background-color: #1e202a;
+  color: white;
   font-size: 1.8rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem;
+}
+
+.header-left {
+  /* display: flex;
+  flex-direction: column; */
+}
+.header-left .header-title {
+  font-size: 1.25rem;
+}
+.header-left .followers {
+  font-size: 0.9rem;
+  color: #8b97c6;
+}
+
+.header-right {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 5vw;
+  margin: 0.2em 0.5em;
+}
+
+.main-container item:nth-child(1) {
+  border-top: 3px solid #198ff5;
+}
+.main-container item:nth-child(2) {
+  border-top: 3px solid #1ca0f2;
+}
+.main-container item:nth-child(3) {
+  border-top: 3px solid linear-gradient(90deg, #fdc468, #df4996);
+}
+
+.first-row {
+  padding: 0em 1em;
+  border-radius: 0.2rem;
+}
+.first-row .username {
+  font-size: 0.9rem;
+}
+.first-row .followers {
+  font-size: 0.7rem;
+  color: #8b97c6;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+.first-row .today {
+  font-size: 0.8rem;
+}
+
+.overview-section {
+  margin: 0.2em 0.5em;
+}
+
+.overview-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.overview-header {
+  margin: 1em 0;
+}
+.overview-header h2 {
+  font-size: 1.25rem;
+}
+
+.overview-item {
+  padding: 0em 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
