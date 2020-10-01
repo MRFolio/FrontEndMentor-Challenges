@@ -1,18 +1,198 @@
 @use "helpers/variables" as v;
+@use "helpers/base" as b;
 
-.icon-fb {
-  color: v.$Facebook;
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1.7rem;
+  @include b.for-tablet-below {
+    display: block;
+  }
 }
 
-.icon-twitter {
-  color: red;
-  /* background-color: red; */
+.header-left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @include b.for-tablet-below {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-title {
+    font-size: 1.8rem;
+  }
+  .followers {
+    font: {
+      size: 0.85rem;
+      weight: v.$bold-700;
+    }
+    color: v.$Desaturated-Blue;
+  }
 }
 
-.icon-ig {
-  color: v.$Instagram;
+.header-right {
+  @include b.flex(flex-end);
+  gap: 2vw;
+  padding: 1rem 0;
+
+  position: relative;
+  color: v.$Dark-Grayish-Blue;
+  font: {
+    size: 0.85rem;
+    weight: v.$bold-700;
+  }
+
+  @include b.for-tablet-below {
+    justify-content: space-between;
+    border-top: 1px solid rgb(70, 69, 69);
+    gap: 5vw;
+  }
+
+  #checkbox {
+    cursor: pointer;
+    padding: 1rem;
+    position: absolute;
+    @include b.for-tablet-below {
+      right: 0;
+    }
+  }
 }
 
-.icon-yt {
-  color: v.$YouTube;
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.5vw;
+  margin: 0.8em 1em;
+  @include b.for-tablet-below {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+}
+
+.item {
+  border-radius: 0.12em;
+  background-color: v.$Dark-Desaturated-Blue;
+  padding: 1em;
+  text-align: center;
+  cursor: pointer;
+  @include b.hoverAndWhite;
+
+  .icon {
+    transform: translateY(30%);
+  }
+
+  .username {
+    font-size: 0.75rem;
+    color: v.$Desaturated-Blue;
+  }
+  .number {
+    font-size: 3rem;
+    font-weight: v.$bold-700;
+    margin-top: 0.5em;
+  }
+
+  .followers {
+    font-size: 0.75rem;
+    color: v.$Desaturated-Blue;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    margin-bottom: 0.5em;
+  }
+  .icon-up,
+  .icon-down {
+    margin-bottom: 0.06em;
+  }
+  .today {
+    font-size: 0.75rem;
+    color: v.$Lime-Green;
+    font-weight: v.$bold-700;
+  }
+
+  &:nth-child(1) {
+    border-top: 3px solid v.$Facebook;
+  }
+  &:nth-child(2) {
+    border-top: 3px solid v.$Twitter;
+  }
+  &:nth-child(3) {
+    border-top: 3px solid transparent;
+    border-image: v.$Instagram;
+    border-image-slice: 1;
+  }
+  &:nth-child(4) {
+    border-top: 3px solid v.$YouTube;
+    .today {
+      color: v.$Bright-Red;
+    }
+  }
+}
+
+.overview-section {
+  margin: 1em;
+}
+
+.overview-header {
+  margin: 0.5em 0;
+  h2 {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+  }
+  @include b.for-tablet-below {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.overview-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.25vw 1.5vw;
+  @include b.for-tablet-below {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5vh;
+  }
+}
+
+.overview-item {
+  padding: 0.8em;
+  border-radius: 0.15em;
+  background-color: v.$Dark-Desaturated-Blue;
+  font-weight: v.$regular-400;
+  cursor: pointer;
+  @include b.hoverAndWhite;
+
+  .top-r {
+    @include b.flex(space-between);
+    padding-bottom: 0.4em;
+
+    .views {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: v.$Desaturated-Blue;
+      font-weight: v.$bold-700;
+    }
+  }
+  .bottom-r {
+    @include b.flex(space-between);
+    .text {
+      font-weight: v.$bold-700;
+    }
+    .icon-up,
+    .icon-down {
+      margin: 0 0.15rem 0.1rem 0;
+    }
+    small {
+      font-size: 0.75rem;
+      color: v.$Lime-Green;
+      font-weight: v.$bold-700;
+      &.down-icon {
+        color: v.$Bright-Red;
+      }
+    }
+  }
 }
