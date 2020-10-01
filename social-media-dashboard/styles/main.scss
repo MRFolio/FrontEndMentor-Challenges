@@ -1,10 +1,22 @@
 @use 'helpers/variables' as v;
-@use 'helpers/resets';
 @use 'components';
 
 body {
-  font-family: "Inter", sans-serif;
-  background-color: v.$White;
-  color: v.$Dark-Grayish-Blue;
-  font-size: 1.8rem;
+  background: linear-gradient(
+    to bottom,
+    v.$Very-Dark-Blue-Top 33%,
+    v.$Very-Dark-Blue 33%
+  );
+  color: v.$White;
+  max-width: 1140px;
+  margin: 0 auto;
+  font: {
+    family: v.$font-Inter;
+    size: 1.8rem;
+  }
+  /* THEME SWITCH */
+  &.white-theme {
+    color: v.$Very-Dark-Blue;
+    background: linear-gradient(to bottom, v.$Very-Pale-Blue 33%, v.$White 33%);
+  }
 }

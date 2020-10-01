@@ -1,0 +1,31 @@
+@use 'variables' as v;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex($justify-content-value) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify-content-value;
+}
+
+@mixin hoverAndWhite {
+  &:hover {
+    background-color: hsl(228, 28%, 25%);
+  }
+
+  &.white {
+    background-color: v.$Light-Grayish;
+    &:hover {
+      background-color: hsl(227, 47%, 92%);
+    }
+  }
+}
+
+@mixin for-tablet-below {
+  @media only screen and (max-width: 806px) {
+    @content;
+  }
+}
