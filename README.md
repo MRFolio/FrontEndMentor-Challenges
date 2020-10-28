@@ -1,7 +1,7 @@
 # FrontEndMentor-challenges
 Projects available at [Fontend Mentor](https://www.frontendmentor.io/challenges).
 
-First project I finished was [social media dashboard with theme switcher](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H).
+First project I finished was [a social media dashboard with theme switcher](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H).
 
 
 
